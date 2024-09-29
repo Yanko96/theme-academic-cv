@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research Proposal | Yangzhe Kong</title>
+    <link>http://localhost:1313/tags/research-proposal/</link>
+      <atom:link href="http://localhost:1313/tags/research-proposal/index.xml" rel="self" type="application/rss+xml" />
+    <description>Research Proposal</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Research Proposal</title>
+      <link>http://localhost:1313/tags/research-proposal/</link>
+    </image>
+    
+    <item>
+      <title>Research Proposal on Trajectory Prediction</title>
+      <link>http://localhost:1313/post/trajectory_prediction_rp/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/trajectory_prediction_rp/</guid>
+      <description>&lt;p&gt;A PDF version is shown below. Or you can download it &lt;a href=&#34;rp.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;a&gt;.
+&lt;object data=&#34;rp.pdf&#34; type=&#34;application/pdf&#34; width=&#34;700px&#34; height=&#34;700px&#34;&gt;
+&lt;embed src=&#34;rp.pdf&#34;&gt;
+&lt;p&gt;This browser does not support PDFs. Please download the PDF to view it: &lt;a href=&#34;rp.pdf&#34;&gt;Download PDF&lt;/a&gt;.&lt;/p&gt;
+&lt;/embed&gt;
+&lt;/object&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

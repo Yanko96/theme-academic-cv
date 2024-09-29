@@ -35,12 +35,12 @@ header:
     show_search: true
     show_theme_chooser: true
     logo:
-      text: "Your Name"
+      text: "Yangzhe Kong"
 
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Yangzhe Kong. This work is licensed under {license}'
     license:
       enable: true
       allow_derivatives: false
@@ -58,3 +58,7 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+icon:
+  icon: 'img/icon.png'  # 路径相对于static文件夹
+  icon_pack: 'custom'

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Complex Network | Yangzhe Kong</title>
+    <link>http://localhost:1313/tags/complex-network/</link>
+      <atom:link href="http://localhost:1313/tags/complex-network/index.xml" rel="self" type="application/rss+xml" />
+    <description>Complex Network</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 15 Dec 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Complex Network</title>
+      <link>http://localhost:1313/tags/complex-network/</link>
+    </image>
+    
+    <item>
+      <title>Complex Network Final Project</title>
+      <link>http://localhost:1313/project/complex_network/</link>
+      <pubDate>Sun, 15 Dec 2019 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/complex_network/</guid>
+      <description>&lt;p&gt;This project served as the final project of course CS-E5740 Complex Networks, Aalto University. The code is available 
+, the final report is available &lt;a href=&#34;Complex_Networks_Project.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

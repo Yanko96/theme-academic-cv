@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Graph Neural Network | Yangzhe Kong</title>
+    <link>http://localhost:1313/tags/graph-neural-network/</link>
+      <atom:link href="http://localhost:1313/tags/graph-neural-network/index.xml" rel="self" type="application/rss+xml" />
+    <description>Graph Neural Network</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 31 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Graph Neural Network</title>
+      <link>http://localhost:1313/tags/graph-neural-network/</link>
+    </image>
+    
+    <item>
+      <title>Path-Link Graph Neural Network for IP Network Performance Prediction</title>
+      <link>http://localhost:1313/project/plnet/</link>
+      <pubDate>Fri, 31 Jul 2020 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/plnet/</guid>
+      <description>&lt;!-- # Path-Link-Graph-Nerural-Network-for-IP-Performance-Prediction --&gt;
+&lt;p&gt;The project was done in Nokia Bell Labs. The paper Path-Link Graph Neural Network for IP Network Performance Prediction is published in 2021 IFIP/IEEE International Symposium on Integrated Network Management (IM).&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Kong, Y., Petrov, D., Räisänen, V. and Ilin, A., 2021, May. &lt;cite&gt; Path-Link Graph Neural Network for IP Network Performance Prediction. In 2021 IFIP/IEEE International Symposium on Integrated Network Management (IM) (pp. 170-177). IEEE. &lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Paper [
+]&lt;/p&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;Dynamic resource provisioning and quality assurance for the plethora of end-to-end slices running over 5G and B5G networks require advanced modeling capabilities. Graph Neural Networks (GNN) have already proven their efficiency for network performance prediction. We verified a SOTA model RouteNet by a new
+implementation in the PyTorch ML library. Next, with the aims to improve accuracy and scalability, an alternative Path-Link neural network (PLNet) architecture is proposed and evaluated.&lt;/p&gt;
+&lt;h2 id=&#34;performance&#34;&gt;Performance&lt;/h2&gt;
+&lt;p&gt;We observed slightly better accuracy and better generalization.&lt;/p&gt;
+&lt;div align=center&gt;&lt;img src=&#34;perf_train.png&#34; width=&#34;800&#34;&gt;&lt;/div&gt;
+&lt;div align=center&gt;&lt;img src=&#34;perf_test.png&#34; width=&#34;1000&#34;&gt;&lt;/div&gt;
+&lt;h2 id=&#34;improved-scalability&#34;&gt;Improved Scalability&lt;/h2&gt;
+&lt;p&gt;Largely improved scalability is observed.&lt;/p&gt;
+&lt;div align=center&gt;&lt;img src=&#34;scalability.png&#34;&gt;&lt;/div&gt;
+&lt;h2 id=&#34;future-works&#34;&gt;Future Works&lt;/h2&gt;
+&lt;p&gt;There are several future directions for the continuation of this study. Firstly, RouteNet and PLNet models have good potential for reinforcement learning. For example, dynamic resource allocation. Secondly, although we consider more generic scenarios than 5G in this paper, it is
+still a good starting point for going further into more specific
+5G scenarios. That is to say, extending the comparison and application of the models on more extensive networks and in the context of 5G scenarios like end-to-end slicing are also promising research topics.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

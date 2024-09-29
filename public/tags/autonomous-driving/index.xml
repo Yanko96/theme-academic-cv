@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Autonomous Driving | Yangzhe Kong</title>
+    <link>http://localhost:1313/tags/autonomous-driving/</link>
+      <atom:link href="http://localhost:1313/tags/autonomous-driving/index.xml" rel="self" type="application/rss+xml" />
+    <description>Autonomous Driving</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 09 Sep 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/icon_hu7729264130191091259.png</url>
+      <title>Autonomous Driving</title>
+      <link>http://localhost:1313/tags/autonomous-driving/</link>
+    </image>
+    
+    <item>
+      <title>Research Proposal on Trajectory Prediction</title>
+      <link>http://localhost:1313/post/trajectory_prediction_rp/</link>
+      <pubDate>Fri, 09 Sep 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/post/trajectory_prediction_rp/</guid>
+      <description>&lt;p&gt;A PDF version is shown below. Or you can download it &lt;a href=&#34;rp.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;a&gt;.
+&lt;object data=&#34;rp.pdf&#34; type=&#34;application/pdf&#34; width=&#34;700px&#34; height=&#34;700px&#34;&gt;
+&lt;embed src=&#34;rp.pdf&#34;&gt;
+&lt;p&gt;This browser does not support PDFs. Please download the PDF to view it: &lt;a href=&#34;rp.pdf&#34;&gt;Download PDF&lt;/a&gt;.&lt;/p&gt;
+&lt;/embed&gt;
+&lt;/object&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Point Cloud-based TNT for Trajectory Prediction</title>
+      <link>http://localhost:1313/project/point_cloud_based_tnt/</link>
+      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/project/point_cloud_based_tnt/</guid>
+      <description>&lt;p&gt;This project was done at research team of perception team at ADAS, Huawei Technologies Co., Ltd.&lt;/p&gt;
+&lt;h2 id=&#34;motivation&#34;&gt;Motivation&lt;/h2&gt;
+&lt;p&gt;Although most of the autonomous driving algorithm follows the pipeline of &amp;ldquo;detection-tracking-prediction&amp;rdquo;, it can be deficient since each stage will accumulate the errors previous stages have made. In some cases, the errors will be amplified and result in disastrous accidents. Moreover, since in later stages, the features that previous stages used to produce the results are not available anymore, which makes correcting erroneous outputs infeasible. Therefore, instead of exploiting rule-based sensor fusion and the sequential pipeline &amp;ldquo;detection-tracking-prediction&amp;rdquo;, our research team decided to explore Hydranet-like networks that fuse features, detect objects, track objects and predict object trajectory. Specifically, detecting, tracking and predicting are completed with different heads that connected to the same backbone network that fuses features from different sensors.&lt;/p&gt;
+&lt;p&gt;To testify the feasibility, we want to verify if it&amp;rsquo;s doable to predict trajectory based on raw point cloud data. And that&amp;rsquo;s how this project came into being.&lt;/p&gt;
+&lt;h2 id=&#34;model-structure&#34;&gt;Model Structure&lt;/h2&gt;
+&lt;h3 id=&#34;backbone-structure&#34;&gt;Backbone Structure&lt;/h3&gt;
+&lt;p&gt;We adopt the detection model from detection team. It&amp;rsquo;s a UNet-like model and its detection head resembles CenterPoint. A lot of somplifications have been done to accelerate the model and make it compatible for AI chips on vehicles. One thing worth noting is that, instead of binary voxels, the model divides the space into fixed-size voxels and compute 4 features for each voxel: Max Z, Min Z, Mean Intensity, No. points.&lt;/p&gt;
+&lt;h3 id=&#34;tnt&#34;&gt;TNT&lt;/h3&gt;
+&lt;p&gt;We first crop rasterized HDMap and feature maps from detection backbone, according to the obstacle position. Then we merge the crop from HDMap and the crop from detection backbone feature maps, to generate the feature for each obstacle, which is then feeded into TNT. The 3 stages of TNT remain unchanged.&lt;/p&gt;
+&lt;h3 id=&#34;overall-structure&#34;&gt;Overall Structure&lt;/h3&gt;
+&lt;p&gt;Here&amp;rsquo;s a figure that illustrates the overall structure of the point cLoud-based TNT.&lt;/p&gt;
+&lt;div align=center&gt;&lt;img src=&#34;structure.svg&#34; width=600&gt;&lt;/div&gt;
+&lt;h2 id=&#34;dataset&#34;&gt;Dataset&lt;/h2&gt;
+&lt;p&gt;Since we use point cloud dataset, there&amp;rsquo;s a huge problem. The distribution of trajectories in the dataset is ill-posed. More than 20% of obstacles in the dataset are either going straight or staying still. To tackle this problem, we use 3 tricks:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;resample the dataset: upsample difficult scenarios and downsample easy ones.&lt;/li&gt;
+&lt;li&gt;use differentiated loss: higher coefficients for difficult scenarios and lower for easy ones.&lt;/li&gt;
+&lt;li&gt;do data augmentation: flip, rotate, etc.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;demo&#34;&gt;Demo&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m very sorry that due to the regulation of Huawei, I cannot show any source code or finished effect of the model. These demo videos are the only things that I can provide here.&lt;/p&gt;
+&lt;!-- &lt;iframe height=1000 width=1000 src=&#34;demo_1.avi&#34;&gt;
+
+&lt;iframe height=1000 width=1000 src=&#34;demo_2.avi&#34;&gt;
+
+&lt;iframe height=1000 width=1000 src=&#34;demo_3.avi&#34;&gt;
+
+&lt;iframe height=1000 width=1000 src=&#34;demo_4.avi&#34;&gt; --&gt;
+&lt;video width=&#34;1000&#34; height=&#34;1000&#34; controls&gt;
+  &lt;source src=&#34;demo_1.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;video width=&#34;1000&#34; height=&#34;1000&#34; controls&gt;
+  &lt;source src=&#34;demo_2.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;video width=&#34;1000&#34; height=&#34;1000&#34; controls&gt;
+  &lt;source src=&#34;demo_3.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;video width=&#34;1000&#34; height=&#34;1000&#34; controls&gt;
+  &lt;source src=&#34;demo_4.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;Due to the volumn of point cloud dataset, it contains far less scenarios than ordinary trajectory prediction dataset. However, the performance is considerable as most peaks of multi-modal predictions are correctly assigned. We belive there&amp;rsquo;s still lots of space for improvement, if we use larger dataset and add &lt;strong&gt;interaction module&lt;/strong&gt; in the model.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
