@@ -35,7 +35,7 @@ sections:
       title: '📚 Objectives'
       subtitle: ''
       text: |-
-        First-year Master student with 3 years of hands-on expertise in full-stack machine learning, seeking an internship opportunity to apply and expand my skills in a dynamic professional environment.
+        Second-year Master student with 3 years of hands-on expertise in full-stack machine learning, seeking an new graduate opportunity to apply and expand my skills in a dynamic professional environment.
         
         Please reach out to collaborate 😃
     design:
@@ -63,6 +63,7 @@ sections:
       view: article-grid
       columns: 2
   - block: collection
+    id: papers
     content:
       title: Recent Publications
       text: ""

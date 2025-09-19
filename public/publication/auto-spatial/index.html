@@ -41,10 +41,10 @@
   
     
   
-  <meta name="description" content="Deep Bolzmann Machine" />
+  <meta name="description" content="We present a novel method, AutoSpatial, an efficient approach with structured spatial grounding to enhance VLMs&#39; spatial reasoning. By combining minimal manual supervision with large-scale Visual Question-Answering (VQA) pairs auto-labeling, our approach tackles the challenge of VLMs&#39; limited spatial understanding in social navigation tasks. By applying a hierarchical two-round VQA strategy during training, AutoSpatial achieves both global and detailed understanding of scenarios, demonstrating more accurate spatial perception, movement prediction, Chain of Thought (CoT) reasoning, final action, and explanation compared to other SOTA approaches. These five components are essential for comprehensive social navigation reasoning. Our approach was evaluated using both expert systems (GPT-4o, Gemini 2.0 Flash, and Claude 3.5 Sonnet) that provided cross-validation scores and human evaluators who assigned relative rankings to compare model performances across four key aspects. Augmented by the enhanced spatial reasoning capabilities, AutoSpatial demonstrates substantial improvements by averaged cross-validation score from expert systems in perception \&amp; prediction (up to 10.71\%), reasoning (up to 16.26\%), action (up to 20.50\%), and explanation (up to 18.73\%) compared to baseline models trained only on manually annotated data." />
 
   
-  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/post/dbm/" />
+  <link rel="alternate" hreflang="en-us" href="http://localhost:1313/publication/auto-spatial/" />
 
   
   
@@ -161,7 +161,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu3247630877640252165.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu4166356570829923896.png" />
 
-  <link rel="canonical" href="http://localhost:1313/post/dbm/" />
+  <link rel="canonical" href="http://localhost:1313/publication/auto-spatial/" />
 
   
   
@@ -187,28 +187,69 @@
     <meta property="twitter:creator" content="@GetResearchDev" />
   
   <meta property="og:site_name" content="Yangzhe Kong" />
-  <meta property="og:url" content="http://localhost:1313/post/dbm/" />
-  <meta property="og:title" content="Slides | Yangzhe Kong" />
-  <meta property="og:description" content="Deep Bolzmann Machine" /><meta property="og:image" content="http://localhost:1313/media/icon_hu7729264130191091259.png" />
+  <meta property="og:url" content="http://localhost:1313/publication/auto-spatial/" />
+  <meta property="og:title" content="Autospatial: Visual-language reasoning for social robot navigation through efficient spatial reasoning learning | Yangzhe Kong" />
+  <meta property="og:description" content="We present a novel method, AutoSpatial, an efficient approach with structured spatial grounding to enhance VLMs&#39; spatial reasoning. By combining minimal manual supervision with large-scale Visual Question-Answering (VQA) pairs auto-labeling, our approach tackles the challenge of VLMs&#39; limited spatial understanding in social navigation tasks. By applying a hierarchical two-round VQA strategy during training, AutoSpatial achieves both global and detailed understanding of scenarios, demonstrating more accurate spatial perception, movement prediction, Chain of Thought (CoT) reasoning, final action, and explanation compared to other SOTA approaches. These five components are essential for comprehensive social navigation reasoning. Our approach was evaluated using both expert systems (GPT-4o, Gemini 2.0 Flash, and Claude 3.5 Sonnet) that provided cross-validation scores and human evaluators who assigned relative rankings to compare model performances across four key aspects. Augmented by the enhanced spatial reasoning capabilities, AutoSpatial demonstrates substantial improvements by averaged cross-validation score from expert systems in perception \&amp; prediction (up to 10.71\%), reasoning (up to 16.26\%), action (up to 20.50\%), and explanation (up to 18.73\%) compared to baseline models trained only on manually annotated data." /><meta property="og:image" content="http://localhost:1313/media/icon_hu7729264130191091259.png" />
     <meta property="twitter:image" content="http://localhost:1313/media/icon_hu7729264130191091259.png" /><meta property="og:locale" content="en-us" />
   
     
       <meta
         property="article:published_time"
-        content="2019-02-05T00:00:00&#43;00:00"
+        content="2025-05-17T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2019-02-05T00:00:00&#43;00:00">
+    <meta property="article:modified_time" content="2025-07-01T00:00:00&#43;00:00">
   
 
   
 
 
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/publication/auto-spatial/"
+  },
+  "headline": "Autospatial: Visual-language reasoning for social robot navigation through efficient spatial reasoning learning",
+  
+  "datePublished": "2025-05-17T00:00:00Z",
+  "dateModified": "2025-07-01T00:00:00Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Yangzhe Kong"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Yangzhe Kong",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/media/icon_hu17980401698969639728.png"
+    }
+  },
+  "description": "We present a novel method, AutoSpatial, an efficient approach with structured spatial grounding to enhance VLMs' spatial reasoning. By combining minimal manual supervision with large-scale Visual Question-Answering (VQA) pairs auto-labeling, our approach tackles the challenge of VLMs' limited spatial understanding in social navigation tasks. By applying a hierarchical two-round VQA strategy during training, AutoSpatial achieves both global and detailed understanding of scenarios, demonstrating more accurate spatial perception, movement prediction, Chain of Thought (CoT) reasoning, final action, and explanation compared to other SOTA approaches. These five components are essential for comprehensive social navigation reasoning. Our approach was evaluated using both expert systems (GPT-4o, Gemini 2.0 Flash, and Claude 3.5 Sonnet) that provided cross-validation scores and human evaluators who assigned relative rankings to compare model performances across four key aspects. Augmented by the enhanced spatial reasoning capabilities, AutoSpatial demonstrates substantial improvements by averaged cross-validation score from expert systems in perception \\\u0026 prediction (up to 10.71\\%), reasoning (up to 16.26\\%), action (up to 20.50\\%), and explanation (up to 18.73\\%) compared to baseline models trained only on manually annotated data."
+}
+</script>
+
+  
 
   
 
 
-  <title>Slides | Yangzhe Kong</title>
+  <title>Autospatial: Visual-language reasoning for social robot navigation through efficient spatial reasoning learning | Yangzhe Kong</title>
 
   
   
@@ -532,140 +573,6 @@
 
 
 
-  
-  
-  <link type="text/css" rel="stylesheet" href="/dist/lib/katex/katex.min.505d5f829022bb7b4f24dfee0aa1141cd7bba67afe411d1240335f820960b5c3.css" integrity="sha256-UF1fgpAiu3tPJN/uCqEUHNe7pnr&#43;QR0SQDNfgglgtcM=" />
-  
-  
-  <script defer src="/dist/lib/katex/katex.min.dc84b296ec3e884de093158f760fd9d45b6c7abe58b5381557f4e138f46a58ae.js" integrity="sha256-3ISyluw&#43;iE3gkxWPdg/Z1Ftser5YtTgVV/ThOPRqWK4="></script>
-  
-  
-  
-  
-  <script defer src="/js/katex-renderer.6579ec9683211cfb952064aedf3a3baea5eeb17a061775b32b70917474637c80.js" integrity="sha256-ZXnsloMhHPuVIGSu3zo7rqXusXoGF3WzK3CRdHRjfIA="></script>
-  
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-
 
 
 
@@ -886,6 +793,11 @@
 
 
 
+  
+    
+    
+  
+
 
 <div class="mx-auto flex max-w-screen-xl">
   
@@ -902,7 +814,7 @@
     <ul class="flex flex-col gap-1 lg:hidden">
       
       
-        <li class=""><a
+        <li class="open"><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/publication/"
@@ -912,13 +824,14 @@
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
         </span>
     </a><div class="ltr:pr-0 overflow-hidden">
-        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/publication/auto-spatial/"
     
   >Autospatial: Visual-language reasoning for social robot navigation through efficient spatial reasoning learning
     </a>
+  
               
             </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
@@ -980,7 +893,7 @@
     
   >Experience
     </a></li>
-        <li class="open"><a
+        <li class=""><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/post/"
@@ -1006,40 +919,13 @@
   >Slides
     </a>
               
-            </li><li class="flex flex-col open"><a
+            </li><li class="flex flex-col "><a
     class="hb-sidebar-custom-link
-      sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/post/dbm/"
     
   >Slides
     </a>
-  
-    <ul class="hb-sidebar-mobile-toc"><li>
-              <a
-                href="#boltzmann-machines"
-                class="hb-docs-link"
-              >Boltzmann Machines</a>
-            </li>
-          <li>
-              <a
-                href="#restricted-boltzmann-machines"
-                class="hb-docs-link"
-              >Restricted Boltzmann Machines</a>
-            </li>
-          <li>
-              <a
-                href="#deep-boltzmann-machines--deep-belief-nets"
-                class="hb-docs-link"
-              >Deep Boltzmann Machines &amp;amp; Deep Belief Nets</a>
-            </li>
-          <li>
-              <a
-                href="#thank-you-for-your-time"
-                class="hb-docs-link"
-              >Thank you for your time!</a>
-            </li>
-          </ul>
-  
               
             </li></ul>
       </div></li>
@@ -1131,19 +1017,7 @@
 
 
 
-  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#boltzmann-machines">Boltzmann Machines</a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#restricted-boltzmann-machines">Restricted Boltzmann Machines</a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#deep-boltzmann-machines--deep-belief-nets">Deep Boltzmann Machines &amp; Deep Belief Nets</a>
-      </li>
-      <li class="my-2 scroll-my-6 scroll-py-6">
-        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#thank-you-for-your-time">Thank you for your time!</a>
-      </li></ul>
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4">
 
   
   
@@ -1172,10 +1046,10 @@
 
       
 
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Slides</h1>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Autospatial: Visual-language reasoning for social robot navigation through efficient spatial reasoning learning</h1>
 
       <div class="mt-4 mb-16">
-      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Feb 5, 2019</span><span class="mx-1">·</span>
+      <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Jul 1, 2025</span><span class="mx-1">·</span>
         
           
           
@@ -1185,11 +1059,51 @@
           </div>
           
         
+          
+          <span class="mr-1">,</span>
+          <div class="group inline-flex items-center text-current gap-x-1.5 mx-1">
+            
+            <div >Daeun Song</div>
+          </div>
+          
+        
+          
+          <span class="mr-1">,</span>
+          <div class="group inline-flex items-center text-current gap-x-1.5 mx-1">
+            
+            <div >Jing Liang</div>
+          </div>
+          
+        
+          
+          <span class="mr-1">,</span>
+          <div class="group inline-flex items-center text-current gap-x-1.5 mx-1">
+            
+            <div >Dinesh Monacha</div>
+          </div>
+          
+        
+          
+          <span class="mr-1">,</span>
+          <div class="group inline-flex items-center text-current gap-x-1.5 mx-1">
+            
+            <div >Ziyu Yao</div>
+          </div>
+          
+        
+          
+          <span class="mr-1">,</span>
+          <div class="group inline-flex items-center text-current gap-x-1.5 mx-1">
+            
+            <div >Xuesu Xiao</div>
+          </div>
+          
+        
 
         
         <span class="mx-1">·</span>
         <span class="mx-1">
-          1 min read
+          0 min read
         </span>
         
         </div>
@@ -1212,19 +1126,31 @@
 
 
   
-
-
-
-
-
-
-
-
-
-
-
-
+    
   
+
+
+
+<a class="hb-attachment-link hb-attachment-large" href="https://arxiv.org/pdf/2503.07557" target="_blank" rel="noopener">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h7.5m-7.5 3H12M10.5 2.25H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9"/></svg>
+  PDF
+</a>
+
+
+
+<a class="hb-attachment-link hb-attachment-large" href="/publication/auto-spatial/cite.bib" target="_blank" data-filename="/publication/auto-spatial/cite.bib">
+  <svg style="height: 1em" class='inline-block' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.75 17.25v3.375c0 .621-.504 1.125-1.125 1.125h-9.75a1.125 1.125 0 0 1-1.125-1.125V7.875c0-.621.504-1.125 1.125-1.125H6.75a9.06 9.06 0 0 1 1.5.124m7.5 10.376h3.375c.621 0 1.125-.504 1.125-1.125V11.25c0-4.46-3.243-8.161-7.5-8.876a9.06 9.06 0 0 0-1.5-.124H9.375c-.621 0-1.125.504-1.125 1.125v3.5m7.5 10.375H9.375a1.125 1.125 0 0 1-1.125-1.125v-9.25m12 6.625v-1.875a3.375 3.375 0 0 0-3.375-3.375h-1.5a1.125 1.125 0 0 1-1.125-1.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H9.75"/></svg>
+  Cite
+</a>
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1245,558 +1171,45 @@
 
       
       
+        <div class="max-w-prose grid grid-cols-1 md:grid-cols-[200px_auto] gap-4 my-6">
+
+        
+          <div class="font-bold text-2xl">Abstract</div>
+          <div>We present a novel method, AutoSpatial, an efficient approach with structured spatial grounding to enhance VLMs&rsquo; spatial reasoning. By combining minimal manual supervision with large-scale Visual Question-Answering (VQA) pairs auto-labeling, our approach tackles the challenge of VLMs&rsquo; limited spatial understanding in social navigation tasks. By applying a hierarchical two-round VQA strategy during training, AutoSpatial achieves both global and detailed understanding of scenarios, demonstrating more accurate spatial perception, movement prediction, Chain of Thought (CoT) reasoning, final action, and explanation compared to other SOTA approaches. These five components are essential for comprehensive social navigation reasoning. Our approach was evaluated using both expert systems (GPT-4o, Gemini 2.0 Flash, and Claude 3.5 Sonnet) that provided cross-validation scores and human evaluators who assigned relative rankings to compare model performances across four key aspects. Augmented by the enhanced spatial reasoning capabilities, AutoSpatial demonstrates substantial improvements by averaged cross-validation score from expert systems in perception &amp; prediction (up to 10.71%), reasoning (up to 16.26%), action (up to 20.50%), and explanation (up to 18.73%) compared to baseline models trained only on manually annotated data.</div>
+        
+
+        
+        
+          <div class="font-bold text-2xl">Type</div>
+          <div>
+            <a href="/publication_types/1/">
+            1
+            </a>
+          </div>
+        
+
+        
+          <div class="font-bold text-2xl">Publication</div>
+          <div>In <em>2025 International Conference on Intelligent Robots and Systems</em></div>
+        
+
+        
+
+        
+
+        
+
+      </div>
+      
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
-        <h1 id="deep-bolzmann-machine">Deep Bolzmann Machine</h1>
-<p>Yangzhe Kong</p>
-<hr>
-<h2 id="boltzmann-machines">Boltzmann Machines</h2>
-<ul>
-<li>Network is symmetrically connected</li>
-<li>Allow connection between visible and hidden units</li>
-<li>Each binary unit makes stochastic decision to be either on or off
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt="" srcset="
-               /post/dbm/bm_hu4476210034108605609.webp 400w,
-               /post/dbm/bm_hu9950089202229577098.webp 760w,
-               /post/dbm/bm_hu10484981388257526082.webp 1200w"
-               src="/post/dbm/bm_hu4476210034108605609.webp"
-               width="329"
-               height="222"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-</li>
-</ul>
-<hr>
-<ul>
-<li>
-<p>The configuration of the network dictates its “energy”</p>
-</li>
-<li>
-<p>At the equilibrium state, the likelihood is defined as the exponentiated negative energy, known as the Boltzmann distribution</p>
-</li>
-<li>
-<p>The joint probability of the variable 𝑋 is derived by Boltzmann Distribution as follows, Where Z is the Partition Function.
-</p>
-$$p(\mathbf{x}=\frac{1}{Z} exp(\frac{-E(\mathbf{x})}{T}))$$</li>
-</ul>
-<hr>
-<ul>
-<li>Energy Function is defined as</li>
-<li>$$E(\mathbf{x})\overset{\Delta}{=}E(\mathbf{X}=\mathbf{x})=-(\sum_{i<j} w_{ij}x_ix_j+\sum_{i}b_ix_i)$$
-where $𝑤_𝑖𝑗$s are connection weights, $x_i\in\{0,1\}$ expresses the state of the variable and $𝑏_𝑖$ is the bias of variable $x_i$</li>
-</ul>
-<hr>
-<ul>
-<li>Two problems:</li>
-</ul>
-<ol>
-<li>Given $w_{ij}$s and biases, how to achieve thermal equilibrium of $P(\mathbf{X})$ over all possible network config</li>
-<li>Given $\mathbf{X}$, learn $w_{ij}$s and biases to maximize $P(\mathbf{X})$</li>
-</ol>
-<hr>
-<p>Problem 1: How to achieve equilibrium</p>
-<ul>
-<li>We can use Gibbs Sampling</li>
-<li>The conditional probability of the variable $x$ can be derived as follows
-
-$$
-p(x_i=1|\mathbf{X}_{\backslash i} )=\sigma(\frac{\sum_j(w_{ij} x_i+b_i)}{T})
-$$
-
-</li>
-</ul>
-
-$$
-p(x_i=0│\mathbf{X}_{\backslash i} )=1−p(x_i=0│\mathbf{X}_{\backslash i} )
-$$
-
-
-<hr>
-<ul>
-<li>The speed of convergence is related to the temperature 𝑇.</li>
-</ul>
-<p>When $T→\infty,  p(x_i=1│\mathbf{x}_(\backslash i) )→0.5$.<br>
-When $𝑇→0$,<br>
-
-$$
-if \Delta E_i(\mathbf{X}_(\backslash i) )>0,  p(x_i=1│\mathbf{X}_(\backslash i) )→1
-$$
-
-</p>
-
-$$
-if \Delta E_i(\mathbf{X}_(\backslash i) )<0,  p(x_i=1│\mathbf{X}_(\backslash i) ) →0
-$$
-
-
-<ul>
-<li>It means that when $𝑇→0$, the whole system change from being dynamic to deterministic.</li>
-</ul>
-<hr>
-<ul>
-<li>We can use Simulated Annealing Algorithm to introduce some randomness to jump out from the local minimum by setting $x_i$ to 1 with a probability of
-
-$
-\sigma((\Delta E_i (\mathbf{X}_(\backslash i) ))/T)
-$
-
-
-when
-
-$
-\Delta E_i (\mathbf{X}_(\backslash i) )<0
-$
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt=""
-           src="/post/dbm/sa.gif"
-           loading="lazy" data-zoomable /></div>
-  </div></figure>
-</li>
-</ul>
-<hr>
-<p>Problem 2: how to learn the parameters</p>
-<ul>
-<li>Without loss of generalty, let us assume that variables in Boltzmann Machine consist of visible variables $𝐯∈{𝟎,𝟏}^𝒎$  and hidden variables $h\in{0,1}^n$.</li>
-<li>Given a set of visible variables $\mathbf{D}={\mathbf{v} ̂^{((1) )},\mathbf{v} ̂^{((2) )},\cdots,\mathbf{v} ̂^{((𝑁) )} }$, our goal is to find the $𝑾$ that can maximize the log likelihood of the visible variables
-
-$$
-ℒ(𝒟│𝑊,b)=\frac{1}{𝑁} ∑_{(𝑛=1)^𝑁}log⁡(𝑝(𝐯 ̂^{((𝒏))} |𝑊,𝑏))
-$$
-
-</li>
-</ul>
-<hr>
-<ul>
-<li>After some calculations, we can get the derivatives of $w_{ij}$  and $b_{i}$,</li>
-</ul>
-
-$$
-\frac{\nabla\mathcal{L}(\mathcal{D}│\mathbf{W},b)}{\nabla w_{ij}}=\lt x_ix_j \gt _{data}−\lt x_ix_j \gt _{model}
-$$
-
-
-
-$$
-\frac{\nabla\mathcal{L}(\mathcal{D}│\mathbf{W},b)}{\nabla b_i}=\lt x_ix_j \gt _{data}−<\lt x_ix_j \gt _{model}
-$$
-
-
-<ul>
-<li>If gradient ascent is used, update rules can be written like this(update rule for biases is similar)</li>
-</ul>
-
-$$
-w_{ij}\leftarrow w_{ij}+\alpha (\lt x_ix_j \gt _{data}− \lt x_ix_j \gt _{model})
-$$
-
-
-<hr>
-<p>Positive Phase:</p>
-<ul>
-<li>Clamp a data vector on the visible units and set the hidden units to random binary state.</li>
-<li>Update the hidden units one at a time until the network reaches thermal equilibrium at a temperature of 1.</li>
-<li>Sample $<x_ix_j>_{data}$ for every connected pair of units</li>
-<li>Repeat for all data vectors in the training set and average.</li>
-</ul>
-<hr>
-<p>Negative Phase:</p>
-<ul>
-<li>Set all the units to random binary states</li>
-<li>Update the units one at a time until the network reaches thermal equilibrium at a temperature of 1.</li>
-<li>Sample $<x_ix_j>_{model}$ for every connected pair of units</li>
-<li>Repeat many times and average to get good estimates</li>
-</ul>
-<hr>
-<h2 id="restricted-boltzmann-machines">Restricted Boltzmann Machines</h2>
-<ul>
-<li>A simple <strong>unsupervised</strong> learning module;</li>
-<li>Only one layer of hidden units and one layer of visible units;</li>
-<li>No connection between hidden units nor between visible units;</li>
-<li>i.e. a special case of Boltzmann Machine;</li>
-<li>Edges are still undirected or bi-directional</li>
-</ul>
-<hr>
-<ul>
-<li>e.g., an RBM with 2 visible and 3 hidden units:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt="" srcset="
-               /post/dbm/rbm_hu6899603802415465637.webp 400w,
-               /post/dbm/rbm_hu56236736372121259.webp 760w,
-               /post/dbm/rbm_hu4915342761109589782.webp 1200w"
-               src="/post/dbm/rbm_hu6899603802415465637.webp"
-               width="400"
-               height="224"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-</li>
-</ul>
-<hr>
-<ul>
-<li>Energy Function is defined as follows
-
-$$
-E(v,h)=−\sum_i a_iv_i−sum_i b_ih_i−\sum_i \sum_j v_iw_{ij}h_{j} \\ 
-=−\mathbf{a}^T\mathbf{v}−\mathbf{b}^T\mathbf{h}−\mathbf{v}^TW\mathbf{h}
-$$
-
-</li>
-<li>The joint probability $p(v,h)$ is defined as follows</li>
-</ul>
-
-$$
-p(\mathbf{v},\mathbf{h}) =\frac{1}{Z} exp⁡(−E(\mathbf{v},\mathbf{h}))=\frac{1}{Z} exp⁡(\mathbf{a}^T\mathbf{v})exp⁡(\mathbf{b}^T\mathbf{h})exp⁡(\mathbf{v}^TW\mathbf{h})
-$$
-
-
-<p>Where $Z=\sum_{\mathbf{v},\mathbf{h}} exp⁡(−E(\mathbf{v},\mathbf{h}))$ is the partition function</p>
-<hr>
-<ul>
-<li>Good property of RBM: No connection between hidden units nor between visible units; thus given visible variables, hidden variables are independent with each other, and vice versa.
-
-$$
-p(v_i│\mathbf{V}_{\backslash i}, \mathbf{h})=p(v_i│\mathbf{h}); p(h_i│\mathbf{v},\mathbf{h}_{\backslash i})=p(v_i│\mathbf{v})
-$$
-
-</li>
-</ul>
-
-$$
-p(v_i=1│\mathbf{h})=σ(\sum_j w_{ij} h_i+a_i); p(ℎ_i=1│\mathbf{v})=\sigma(\sum_j w_{ij} v_i+b_i)
-$$
-
-
-<ul>
-<li>Still we have the same 2 problems as the Boltzmann Machines</li>
-</ul>
-<hr>
-<p>Problem 1: How to reach equilibrium?</p>
-<ul>
-<li>Still we can use Gibbs Sampling
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt="" srcset="
-               /post/dbm/rbm_p1_hu3178492085494546775.webp 400w,
-               /post/dbm/rbm_p1_hu9604941219534427605.webp 760w,
-               /post/dbm/rbm_p1_hu2734868453627917228.webp 1200w"
-               src="/post/dbm/rbm_p1_hu3178492085494546775.webp"
-               width="760"
-               height="289"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-</li>
-</ul>
-<hr>
-<p>Sampling Procedure:</p>
-<ul>
-<li>(Given or) Randomly initiate a visible variable $\mathbf{v}_0$, calculate the probability distribution of hidden variable, and sample a hidden variable $\mathbf{h}_0$ from it.</li>
-<li>Based on $\mathbf{h}_0$, calculate the probability distribution of visible variable, and sample a hidden variable $\mathbf{v}_0$ from it.</li>
-<li>Iterate $t$ times and obtain $(\mathbf{v}_t,\mathbf{h}_t)$</li>
-<li>When $t→\infty$, $(\mathbf{v}_t,\mathbf{h}_t)$ obeys dirstribution of $p(\mathbf{v},\mathbf{h})$</li>
-</ul>
-<hr>
-<p>Problem 2: How to learn the parameters?</p>
-<ul>
-<li>We can use a more efficient method called Contrastive Divergence (Hinton 2002) by exploiting the special structure of RBM.</li>
-<li>Change the objective function from likelihood function to Contrastive Divergence
-$$p^0||p_θ^\infty−p^1||p_θ^\infty$$</li>
-</ul>
-<hr>
-<p>An approximate Maximum Likelihood Learning Algorithm</p>
-<ol>
-<li>Pick a data vector, $\mathbf{d}$, from the distribution $p_0$.</li>
-<li>Compute, for each expert separately, the posterior probability distribution over its latent (i.e., hidden) variables given the data vector, $\mathbf{d}$.</li>
-<li>Pick a value for each latent variable from its posterior distribution.</li>
-</ol>
-<hr>
-<ol start="4">
-<li>Given the chosen values of all the latent variables, compute the conditional distribution over all the visible variables by multiplying together the conditional distributions specified by each expert and renormalizing.</li>
-<li>Pick a value for each visible variable from the conditional distribution. These values constitute the reconstructed data vector, $\mathbf{d}^{reconstructed}$.</li>
-</ol>
-<hr>
-<p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt="" srcset="
-               /post/dbm/rbm_learn1_hu3292311890676987613.webp 400w,
-               /post/dbm/rbm_learn1_hu7950914043012426902.webp 760w,
-               /post/dbm/rbm_learn1_hu17978846782819007723.webp 1200w"
-               src="/post/dbm/rbm_learn1_hu3292311890676987613.webp"
-               width="760"
-               height="298"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
- <!-- <img src="rbm_learn1.png" width = "300" height = "200" alt="图片名称" align=center /> -->
-<hr>
-<ul>
-<li>A picture of contrastive divergence learning
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt="" srcset="
-               /post/dbm/rbm_learn2_hu14830384631231495653.webp 400w,
-               /post/dbm/rbm_learn2_hu13568831763966151959.webp 760w,
-               /post/dbm/rbm_learn2_hu2764384644216545632.webp 1200w"
-               src="/post/dbm/rbm_learn2_hu14830384631231495653.webp"
-               width="760"
-               height="344"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-</li>
-</ul>
-<hr>
-<ul>
-<li>A good compromise between speed and correctness is to start with small weights and use CD1</li>
-</ul>
-<ol>
-<li>Once the weights grow, the Markov chain mixes more slowly so we use CD3.</li>
-<li>Once the weights have grow more we use CD10.</li>
-</ol>
-<hr>
-<ul>
-<li>Applications: Restricted Boltzmann Machines For Collaborative Filtering (Salakhudinov et al. 2007)</li>
-<li>RBM can be used for Collaborative Filtering</li>
-<li>Wikipedia: In the newer, narrower sense, collaborative filtering is a method of making automatic predictions (filtering) about the interests of a user by collecting preferences or taste information from many users (collaborating).</li>
-</ul>
-<hr>
-<ul>
-<li>
-<p>Fundamental ideas: If two items get similar rating patterns then they are probably similar If two users rated items in a similar fashion, then they will probably give similar ratings to an unrated item Properties of items are unknown</p>
-</li>
-<li>
-<p>Applications: Amazon (Customers Who Bought This Item Also Bought) Netflix Spotify
-<img src="rbm_cf.png" width = "300" align=center /></p>
-</li>
-</ul>
-<!-- ![](rbm_cf.png) -->
-<hr>
-<ul>
-<li>Make Visible Units K-nary
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt="" srcset="
-               /post/dbm/rbm_cf_knary_hu17137952066238043296.webp 400w,
-               /post/dbm/rbm_cf_knary_hu16119625384315163969.webp 760w,
-               /post/dbm/rbm_cf_knary_hu15252741726138712821.webp 1200w"
-               src="/post/dbm/rbm_cf_knary_hu17137952066238043296.webp"
-               width="760"
-               height="371"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-</li>
-</ul>
-<hr>
-<ul>
-<li>Learning and Prediction are similar to normal RBM.
-
-$$
-\Delta W_{ij}^k = \epsilon (\lt v_i^k h_j \gt _{data} - \lt v_i^k h_j \gt _T)
-$$
-
-</li>
-</ul>
-
-$$
-\hat{p}_j = p(h_j = 1 | \mathbf{V}) = \sigma (b_j + \sum_{i=1}^m \sum_{k=1}^{K} v_i^k W_{ij}^k)
-$$
-
-
-
-$$
-p(v_q^k=1| \hat{\mathbf{p}}) = \frac{exp(b^k + \sum_{j=1}^F \hat{p}_j W{qj}^k)}{\sum_{l=1}^K exp(b_p^l + \sum_{j=1}^F\hat{p}_j W{qj}^l)}
-$$
-
-
-<ul>
-<li>There are also some variations like RBM with Gaussian Hidden Units or Conditional RBM to choose.</li>
-</ul>
-<hr>
-<h2 id="deep-boltzmann-machines--deep-belief-nets">Deep Boltzmann Machines &amp; Deep Belief Nets</h2>
-<ul>
-<li>Deep Belief Network(DBN) have top two layers with undirected connections and lower layers have directed connections</li>
-<li>Deep Boltzmann Machine(DBM) have entirely undirected connections
-<img src="dbm_dbn.png" width = "300" align=center /></li>
-</ul>
-<!-- ![](dbm_dbn.png) -->
-<hr>
-<p>The wake-sleep algorithm: A learning algorithm for unsupervised neural networks (Hinton et al. 1995)</p>
-<ul>
-<li>Wake Phase: Use recognition weights to perform a bottom-up pass. Train the generative weights to reconstruct activities in each layer from the layer above</li>
-<li>Sleep Phase: Use generative weights to generate samples from the model. Train the recognition weights to reconstruct activities in each layer from the layer below</li>
-</ul>
-<hr>
-<p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<figure  >
-  <div class="flex justify-center	">
-    <div class="w-100" ><img alt="" srcset="
-               /post/dbm/wake_sleep_hu9448358851795326091.webp 400w,
-               /post/dbm/wake_sleep_hu14967670241026465606.webp 760w,
-               /post/dbm/wake_sleep_hu13864327593167023201.webp 1200w"
-               src="/post/dbm/wake_sleep_hu9448358851795326091.webp"
-               width="470"
-               height="505"
-               loading="lazy" data-zoomable /></div>
-  </div></figure>
-</p>
-<hr>
-<ul>
-<li>An surprising observation: If we train an RBM, and use the output of the previous RBM as the input of the next RBM, and stack them together, what we get at last is not a multi-layer Boltzmann Machine, it’s actually a DBN!</li>
-</ul>
-<hr>
-<p>This leads to an efficient way to train DBN (Hinton et al. 2006)</p>
-<ol>
-<li>Training a deep network by stacking RBMs (adding another layer of features each time can improve the variational lower bound)</li>
-<li>Fine-tuning with a contrastive version of the wake-sleep algorithm</li>
-</ol>
-<ul>
-<li>Do a stochastic bottom-up pass</li>
-<li>Do a few iterations of sampling in the top level RBM</li>
-<li>Do a stochastic top-down pass</li>
-</ul>
-<ol start="3">
-<li>Discriminative Fine-tuning (when training a discriminative model)</li>
-</ol>
-<hr>
-<h2 id="thank-you-for-your-time">Thank you for your time!</h2>
-<!-- [complete sildes]() -->
-
+        
       </div>
 
       
-  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2019-02-05T00:00:00.000Z">
+  <time class="mt-12 mb-8 block text-xs text-gray-500 ltr:text-right rtl:text-left dark:text-gray-400" datetime="2025-07-01T00:00:00.000Z">
     <span>Last updated on</span>
-    Feb 5, 2019</time>
+    Jul 1, 2025</time>
 
       <div class="container mx-auto prose prose-slate lg:prose-xl dark:prose-invert mt-5">
         
@@ -1805,14 +1218,6 @@ $$
   
 
   
-
-<div class="flex justify-center">
-  
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/machine-learning/">Machine Learning</a>
-  
-  <a class="no-underline bg-primary-100 hover:bg-primary-300 text-primary-800 text-xs font-medium mr-2 px-2.5 py-0.5 lg:px-5 lg:py-2 rounded dark:bg-primary-900 dark:hover:bg-primary-700 dark:text-primary-300" href="/tags/bolzmann-machine/">Bolzmann Machine</a>
-  
-</div>
 
 
   
@@ -1828,7 +1233,7 @@ $$
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fdbm%2F&amp;text=Slides"
+    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Fauto-spatial%2F&amp;text=Autospatial%3A&#43;Visual-language&#43;reasoning&#43;for&#43;social&#43;robot&#43;navigation&#43;through&#43;efficient&#43;spatial&#43;reasoning&#43;learning"
     title="X"
     aria-label="X"
     id="share-link-x"
@@ -1846,7 +1251,7 @@ $$
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fdbm%2F&amp;t=Slides"
+    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Fauto-spatial%2F&amp;t=Autospatial%3A&#43;Visual-language&#43;reasoning&#43;for&#43;social&#43;robot&#43;navigation&#43;through&#43;efficient&#43;spatial&#43;reasoning&#43;learning"
     title="Facebook"
     aria-label="Facebook"
     id="share-link-facebook"
@@ -1866,7 +1271,7 @@ $$
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=Slides&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fdbm%2F"
+    href="mailto:?subject=Autospatial%3A%20Visual-language%20reasoning%20for%20social%20robot%20navigation%20through%20efficient%20spatial%20reasoning%20learning&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Fauto-spatial%2F"
     title="Email"
     aria-label="Email"
     id="share-link-email"
@@ -1884,7 +1289,7 @@ $$
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fdbm%2F&amp;title=Slides"
+    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Fauto-spatial%2F&amp;title=Autospatial%3A&#43;Visual-language&#43;reasoning&#43;for&#43;social&#43;robot&#43;navigation&#43;through&#43;efficient&#43;spatial&#43;reasoning&#43;learning"
     title="LinkedIn"
     aria-label="LinkedIn"
     id="share-link-linkedin"
@@ -1902,7 +1307,7 @@ $$
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=Slides%20http%3A%2F%2Flocalhost%3A1313%2Fpost%2Fdbm%2F"
+    href="whatsapp://send?text=Autospatial%3A&#43;Visual-language&#43;reasoning&#43;for&#43;social&#43;robot&#43;navigation&#43;through&#43;efficient&#43;spatial&#43;reasoning&#43;learning%20http%3A%2F%2Flocalhost%3A1313%2Fpublication%2Fauto-spatial%2F"
     title="WhatsApp"
     aria-label="WhatsApp"
     id="share-link-whatsapp"
@@ -1930,6 +1335,36 @@ $$
 
 
   
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
 
 
 
@@ -1947,24 +1382,25 @@ $$
   <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
     <div class="">
       
-        <a class="group flex no-underline" href="/post/bda/">
-          <span
-            class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
-          ><span class="ltr:inline rtl:hidden">&larr;</span></span>
+    </div>
+    <div class="">
+      
+        <a class="group flex text-right no-underline" href="/publication/social-llava/">
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Slides</span>
+            >Social-llava: Enhancing robot navigation through human-language reasoning in social spaces</span
+            >
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
-                Feb 5, 2019
+                Jul 1, 2025
               
             </span>
           </span>
+          <span
+            class="mt-[-0.3rem] ms-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+          ><span class="ltr:inline">&rarr;</span></span>
         </a>
-      
-    </div>
-    <div class="">
       
     </div>
   </div>

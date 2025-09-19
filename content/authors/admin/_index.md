@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: PhD Student
+role: Master Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
@@ -47,20 +47,19 @@ profiles:
   #   url: https://orcid.org/
 
 interests:
-  - Artificial Intelligence
+  - Machine Learning
+  - Recommendation/Search Systems
+  - Online Advertising
   - Autonomous Driving
   - Robotics
-  - Social Navigation
   - VLMs/LLMs
-  - Computer Vision
   - Reinforcement Learning
-  - Combinatorial Optimization
 
 education:
-  - area: PhD in Computer Science
+  - area: MSc in Computer Science
     institution: George Mason University
     date_start: 2024-08-26
-    date_end: 2027-06-01
+    date_end: 2026-05-01
     summary: |
       Supervised by [Prof. Xuesu Xiao](https://cs.gmu.edu/~xiao/).
     # button:
@@ -68,7 +67,7 @@ education:
     #   url: 'https://example.com'
   - area: MSc in ICT Innovation (Visual Computing and Communication)
     institution: Aalto University
-    date_start: 2019-09-01
+    date_start: 2018-09-01
     date_end: 2020-07-01
     summary: |
       GPA: 4.32/5.0
@@ -79,25 +78,36 @@ education:
       - Machine Learning
       - Complex Networks
       - Reinforcement Learning
-  - area: MSc in Information and Communication Engineering
-    institution: University of Trento
-    date_start: 2018-09-01
-    date_end: 2020-07-01
-    summary: |
-      GPA: 28.29/30
+  # - area: MSc in Information and Communication Engineering
+  #   institution: University of Trento
+  #   date_start: 2018-09-01
+  #   date_end: 2020-07-01
+  #   summary: |
+  #     GPA: 28.29/30
 
-      Courses included:
-      - Recognition Systems
-      - Computer Networks
-      - Digital Signal Processing
+  #     Courses included:
+  #     - Recognition Systems
+  #     - Computer Networks
+  #     - Digital Signal Processing
   - area: BEng in Transportation Engineering
     institution: Tongji University
     date_start: 2014-09-01
     date_end: 2018-07-01
     summary: |
 work:
+  - position: Machine Learning Engineer Intern
+    company_name: TikTok
+    company_url: ''
+    company_logo: ''
+    date_start: 2025-06-09
+    date_end: '2025-08-22'
+    summary: |2-
+      Responsibilities include:
+       - Proposed and developed a novel vehicle model-based recall strategy (Hot Model) for Auto Catalog Ads, boosting offline coverage ratio from 10-20% to 50-70% across three data centers by aggregating user interest at the model level rather than product ID.
+       - Led the end-to-end development of a "Swing User" acquisition strategy, building a data pipeline with PySpark to identify users with off-platform auto intent but no on-platform engagement. Diagnosed and resolved key performance bottlenecks in the online A/B test, including signal sparsity and suboptimal ranking.
+      Initiated an exploratory project on Item2Item recommendation generalization; applied FP-Growth algorithm on user intent data to discover high-confidence association rules for recall expansion.
   - position: Senior Machine Learning Engineer
-    company_name: Jidu Automobile
+    company_name: Chery Automobile
     company_url: ''
     company_logo: ''
     date_start: 2022-11-11
@@ -145,17 +155,33 @@ work:
 skills:
   - name: Technical Skills
     items:
-      - name: Python
+      - name: Python, C/C++, Java, R
         description: ''
-        percent: 80
+        percent: 100
+        icon: code-bracket
+      # - name: C/C++
+      #   description: ''
+      #   percent: 100
+      #   icon: code-bracket
+      # - name: Java
+      #   description: ''
+      #   percent: 80
+      #   icon: code-bracket
+      - name: PyTorch, Tensorflow
+        description: ''
+        percent: 100
         icon: code-bracket
       - name: Data Science
         description: ''
         percent: 100
         icon: chart-bar
-      - name: SQL
+      - name: SQL, MangoDB
         description: ''
         percent: 40
+        icon: circle-stack
+      - name: Full-Stack Deep Learning
+        description: ''
+        percent: 100
         icon: circle-stack
   - name: Hobbies
     color: '#eeac02'
@@ -165,10 +191,18 @@ skills:
         description: ''
         percent: 60
         icon: person-simple-walk
+      - name: Dogs
+        description: ''
+        percent: 100
+        icon: dog
       - name: Cats
         description: ''
         percent: 100
         icon: cat
+      - name: Cooking
+        description: ''
+        percent: 100
+        icon: cook
       - name: Photography
         description: ''
         percent: 80
@@ -214,4 +248,5 @@ languages:
 
 ## About Me
 
-I'm Yangzhe Kong, a Computer Science Ph.D. student at George Mason University with a passion for machine learning, robotics, and AI. My journey in tech has taken me from Tongji University in China to Aalto University in Finland, and now to the US, with valuable industry experience at companies like Huawei and Nokia Bell Labs along the way. My research focuses on enhancing robot social navigation through multi-modal learning, combining my expertise in trajectory prediction, computer vision, and natural language processing. I'm always excited to tackle complex problems and push the boundaries of what's possible in AI and robotics.
+<!-- I'm Yangzhe Kong, a Computer Science Ph.D. student at George Mason University with a passion for machine learning, robotics, and AI. My journey in tech has taken me from Tongji University in China to Aalto University in Finland, and now to the US, with valuable industry experience at companies like Huawei and Nokia Bell Labs along the way. My research focuses on enhancing robot social navigation through multi-modal learning, combining my expertise in trajectory prediction, computer vision, and natural language processing. I'm always excited to tackle complex problems and push the boundaries of what's possible in AI and robotics. -->
+I am a results-driven Master's graduate seeking a New Graduate Machine Learning Engineer position. My core expertise is in deploying and optimizing machine learning models in production. I specialize in Search & Recommendation Systems, Online Advertising, Autonomous Driving, and Model Optimization & Deployment. My experience at TikTok and Huawei has provided me with a strong foundation in building, training, and scaling ML models and pipelines. I am passionate about building innovative and efficient machine learning systems and am eager to contribute to a challenging role. Feel free to explore my work and connect with me.

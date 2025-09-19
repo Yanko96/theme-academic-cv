@@ -3,6 +3,7 @@
     "tags": [
       "0",
       "0,",
+      "?xml",
       "\\lt",
       "a",
       "article",
@@ -397,7 +398,6 @@
       "portrait-title",
       "powered-by",
       "pr-2",
-      "pr-3",
       "pr-4",
       "pr-[calc(env(safe-area-inset-right)-1.5rem)]",
       "print:hidden",
@@ -419,7 +419,6 @@
       "py-0.5",
       "py-2",
       "py-2.5",
-      "py-3",
       "py-5",
       "relative",
       "resume-biography",
@@ -451,6 +450,7 @@
       "space-x-3",
       "space-y-1",
       "space-y-3",
+      "st0",
       "sticky",
       "text-1xl",
       "text-2xl",
@@ -517,6 +517,8 @@
       "z-30"
     ],
     "ids": [
+      "Icons",
+      "Layer_1",
       "a2c-agent",
       "about-me",
       "acknowledges",
@@ -546,6 +548,7 @@
       "nav-toggle",
       "overall-structure",
       "page-bg",
+      "papers",
       "performance",
       "posterior-distributions",
       "pretrained-cnn-vae",
